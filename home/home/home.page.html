@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating">DATE</ion-label>
+    <ion-datetime display-timezone="utc" displayFormat="DD/MM/YYYY"
+                  [(ngModel)]="minDate"
+                  (ionChange)="setDate()">
+    </ion-datetime>
+
+    <ion-button min="2020-08" class="bg" (click)="openCalendar()">Calendar</ion-button>
+
+  </ion-item>
+
+</ion-content>
